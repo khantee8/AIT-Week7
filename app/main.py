@@ -6,7 +6,7 @@ from io import BytesIO
 import matplotlib.pyplot as plt
 
 app = FastAPI()
-model = YOLO("weights/yolov8n.pt")
+model = YOLO("weights/best2.pt")
 
 @app.get("/api/v1/class-info")
 async def model_class_info():
